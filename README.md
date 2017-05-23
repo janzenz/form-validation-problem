@@ -3,7 +3,7 @@ You can open the `index.html` on the browser or do an `npm start` then go to `ht
 
 To run the tests just do `npm test` and you should see the tests in the console.
 
-##Documentation
+## Documentation
 
 ### Here are the steps I took in approaching this problem.
 - First I read the `problem definition` and wrap my head around it.
@@ -12,18 +12,18 @@ To run the tests just do `npm test` and you should see the tests in the console.
 - I then began on adding the business rules under `test/rules.js`.
 - And then searched for a validation package and found `validate.js` which has very good documentation and easy to use.  
 
-##Progressive enhancement
+## Progressive enhancement
 - If this is going to support more features later I'm going to refactor my code and separate its concerns further with OOP.
 - Use `Sass` for the CSS
 - Use React ;)
 
-##Browser support
+## Browser support
 - Most major browsers: Chrome, FireFox, Safari, Edge, and IE 9+.
 
-##Testing
+## Testing
 - I used `chai` and `mocha` for testing and tested based on `problem definition`
 
-##Tooling
+## Tooling
 I used `webpack` for building the script which really helped a lot making it fast to develop. It might be overkill but it's just easy to setup and can be leveraged to React/Angular later if need be.
 
 I also used `polyfills` to polyfill some ES6 features like `Object.assign` and `Object.entries`.
