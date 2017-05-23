@@ -1,4 +1,4 @@
-const app = require('../app/lib')
+const validation = require('../app/validation')
 const expect = require('chai').expect
 
 describe('Check validation form', () => {
@@ -11,7 +11,7 @@ describe('Check validation form', () => {
       tiger_type: 'lion',
     }
 
-    expect(app.validateForm(form)).to.be.empty
+    expect(validation.validateForm(form)).to.be.empty
   })
 
   it('expect to pass the valid form with tiger type', () => {
@@ -23,7 +23,7 @@ describe('Check validation form', () => {
       tiger_type: 'lion',
     }
 
-    expect(app.validateForm(form)).to.be.empty
+    expect(validation.validateForm(form)).to.be.empty
   })
 })
 
@@ -37,7 +37,7 @@ describe('Confirm failing tests', () => {
       tiger_type: '',
     }
 
-    expect(app.validateForm(form))
+    expect(validation.validateForm(form))
       .to.have.all.keys(['email', 'password', 'colour', 'animal'])
   })
 
@@ -50,7 +50,7 @@ describe('Confirm failing tests', () => {
       tiger_type: '',
     }
 
-    expect(app.validateForm(form)).to.have.property('tiger_type')
+    expect(validation.validateForm(form)).to.have.property('tiger_type')
   })
 
   it('expect to fail when email invalid', () => {
@@ -62,7 +62,7 @@ describe('Confirm failing tests', () => {
       tiger_type: 'lion',
     }
 
-    expect(app.validateForm(form)).to.have.property('email').that.is.an('array')
+    expect(validation.validateForm(form)).to.have.property('email').that.is.an('array')
   })
 
   it('expect to fail when animal is empty', () => {
@@ -74,6 +74,6 @@ describe('Confirm failing tests', () => {
       tiger_type: 'lion',
     }
 
-    expect(app.validateForm(form)).to.have.property('animal')
+    expect(validation.validateForm(form)).to.have.property('animal')
   })
 })

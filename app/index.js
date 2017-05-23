@@ -1,5 +1,5 @@
 const validate = require('validate.js')
-const app = require('./lib')
+const validation = require('./validation')
 require('core-js/fn/object/entries')
 
 function resetClass(form) {
@@ -30,7 +30,7 @@ function onSubmit(event) {
   }
 
   resetClass(form)
-  const errorMap = app.validateForm(form)
+  const errorMap = validation.validateForm(form)
 
   if (!validate.isEmpty(errorMap)) {
     applyClass(errorMap)
