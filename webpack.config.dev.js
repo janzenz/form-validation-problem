@@ -28,7 +28,6 @@ module.exports = {
     port: 9000,
     publicPath: '/dist/',
     // match the output `publicPath`
-    public: '192.168.2.36',
     // Uncomment if regular HMR won't work.
     // watchOptions: {
     //     poll: true,
