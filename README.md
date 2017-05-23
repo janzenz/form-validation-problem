@@ -1,6 +1,8 @@
 # Form validation problem
 You can open the `index.html` on the browser or do an `npm start` then go to `http://localhost:9000` when developing.
 
+To run the tests just do `npm test` and you should see the tests in the console.
+
 ##Documentation
 ### Here are the steps I took in approaching this problem.
 - First I read the `problem definition` and wrap my head around it.
