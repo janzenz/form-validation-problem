@@ -1,41 +1,21 @@
-# [Form validation problem](https://springload.github.io/form-validation-problem/)
+# Form validation problem
+You can open the `index.html` on the browser or do an `npm start` then go to `http://localhost:9000` when developing.
 
-We've created this problem to evaluate how developers tackle a real-world problem. If you've been assigned this problem you should spend around **2 hours** working on it. The last thing we want you to do is toil away for days on end!
+##Documentation
+### Here are the steps I took in approaching this problem.
+- First I read the `problem definition` and wrap my head around it.
+- I then decided on what tools to use to solve this problem in JavaScript.
+- I then began on adding the business rules under `test/rules.js`.
+- And then searched for a validation package and found `validate.js` which has very good documentation and easy to use.
+##Progressive enhancement
+- If I had more time I would have 
+##Browser support
+- Most majore browsers: Chrome, FireFox, Safari, Edge, and IE.
+##Testing
+- I used `chai` and `mocha` for testing and tested based on `problem definition`
+##Tooling
+I used `webpack` for building the script which really helped a lot making it fast to develop. It might be overkill but it's just easy to setup and can be leveraged to React/Angular later if need be.
 
-If you've stumbled across this and want to work at [Springload](https://www.springload.co.nz/) feel free to submit it too. We're always on the lookout for skilled developers.
+I also used `polyfills` to polyfill some ES6 features like `Object.assign` and `Object.entries`.
 
-## Problem definition
-
-Included in this repository is an [index.html](index.html) file that contains a form. You must ensure all of the following rules are met before the form is posted to the (in this case imaginary) server:
-
-* `Email` must be a valid email address.
-* `Password` must be longer than 8 characters.
-* `Colour` must be selected.
-* At least two `Animal`s must be chosen.
-* If `Tiger` is one of the chosen `Animal`s then `Type of tiger` is required to be a non-empty string.
-
-## Other requirements
-
-If the form is submitted and an error occurs, the error element's parent should have a CSS `error` class added to it.
-
-```html
-<p class="error">
-    <label for="field"></label>
-    <input id="field" type="text" value="foo">
-</p>
-```
-
-## The cherry on the cake
-
-Beyond the problem statement, show us the consideration you have given to some or all of the following:
-
-- Documentation
-- Accessibility
-- Progressive enhancement
-- Browser support
-- Testing
-- Tooling
-
-## Submission
-
-Please email us a link to your fork of this repository, or a zip of your solution to `1337h4x0r@springload.co.nz`.
+Lastly, I also used `eslint` and `editorconfig` to keep everything tidy :)
