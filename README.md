@@ -4,12 +4,13 @@ You can open the `index.html` on the browser or do an `npm start` then go to `ht
 To run the tests just do `npm test` and you should see the tests in the console.
 
 ##Documentation
+
 ### Here are the steps I took in approaching this problem.
 - First I read the `problem definition` and wrap my head around it.
 - I then decided on what tools to use to solve this problem in JavaScript.
 - Then setup the project using `webpack` and editor specific rules with `eslint` and `editorconfig`.
 - I then began on adding the business rules under `test/rules.js`.
-- And then searched for a validation package and found `validate.js` which has very good documentation and easy to use.
+- And then searched for a validation package and found `validate.js` which has very good documentation and easy to use.  
 
 ##Progressive enhancement
 - If this is going to support more features later I'm going to refactor my code and separate its concerns further with OOP.
